@@ -26,6 +26,10 @@ if random_no.isnumeric():
         print(f"{random_no} is not a valid four-digit number")
         random_no = input("Please enter a valid 4 digit number:")
 
+    if int(random_no) == 9999:
+        print(f"The algorithm does not support {random_no}")
+        random_no = input("Please enter another valid 4 digit number:")    
+
     if int(random_no) > 0 and int(random_no) < 9999 and int(random_no[0]) > 0:
         print("That is a valid number")
 
@@ -60,6 +64,10 @@ if random_no.isnumeric():
                 print(f"Your number has {len(random_no2)} digits")
                 print(f"{random_no2} is not a valid four-digit number")
                 random_no2 = input("Please enter a valid 4 digit number:")
+
+            if int(random_no2) == 9999:
+                print(f"The algorithm does not support {random_no2}")
+                random_no2 = input("Please enter another valid 4 digit number:")      
 
             if int(random_no2) > 0 and int(random_no2) < 9999 and int(random_no2[0]) > 0:
                 print("That is a valid number")
@@ -97,6 +105,10 @@ if random_no.isnumeric():
                     print(f"Your number has {len(random_no3)} digits")
                     print(f"{random_no3} is not a valid four-digit number")
                     random_no3 = (input("Please enter a valid 4 digit number:"))
+
+                if int(random_no3) == 9999:
+                    print(f"The algorithm does not support {random_no3}")
+                    random_no3 = input("Please enter another valid 4 digit number:")      
 
                 if int(random_no3) > 0 and int(random_no3) < 9999 and int(random_no3[0]) > 0:
                     print("That is a valid number")
