@@ -97,37 +97,3 @@ if random_no.isnumeric():
             print(f"{random_no3} is not a number") 
 else:
     print(f"{random_no} is not a number") 
-
-
-
-    #print(random_no)
-    #print(type(random_no))
-
-
-
-        #print(type(random_no))
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
