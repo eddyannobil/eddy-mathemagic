@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
+'''
+This script computes the actual sum of the five "random" four-digit numbers 
+to cross-check with the predicted sum and display the result to the user.
+'''
+
+# A variable is declared to store the user's name and input number
 user = input("What is your name? ")
 print(f"Hello {user}, do you believe in mathemagic? ")
 random_no = input("Enter a 4 digit random number:")
 
+# Conditions are set to ensure the user selects numbers that are valid in our code
 if random_no.isnumeric():   
     if int(random_no) == 0000:
         print(f"{random_no} is not a valid number")
@@ -29,9 +36,10 @@ if random_no.isnumeric():
             random_num = ('20' + str(random_number))
         else:
             random_num = ('2' + str(random_number)) 
+        # The sum of all random numbers is predicted at the start of the first input            
         print(f"The sum of all the numbers you will enter will be {random_num}")    
         random_no2 = input("Enter another 4 digit number:")
-
+        # A second random number is received if it is valid 
         if random_no2.isnumeric():   
             if int(random_no2) == 0000:
                 print(f"{random_no2} is not a valid number")
@@ -62,6 +70,7 @@ if random_no.isnumeric():
             print(f"{random_no2} is not a number") 
 
         random_no3 = (input("Enter another 4 digit number:"))
+        # A third random number is received if it is valid        
         if random_no3.isnumeric():   
                 if int(random_no3) == 0000:
                     print(f"{random_no3} is not a valid number")
@@ -91,6 +100,7 @@ if random_no.isnumeric():
                     print(f"So far, the numbers we have are: {random_no}, {random_no2}, {nine_minus_random_a}, {random_no3}, {nine_minus_random_b}")
                     print("Take a sec to compute the sum of these numbers...")
                     sum_of_4 = int(random_no) + int(random_no2) + int(random_no3) + int(nine_minus_random_a) + int(nine_minus_random_b)
+                    # The sum of all 5 random numbers is predicted                     
                     print(f"Did you get {sum_of_4}?")
                     print("It's mathemagic!")
         else:
